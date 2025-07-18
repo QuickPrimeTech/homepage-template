@@ -1,18 +1,23 @@
 import Image from "next/image";
 import { Award } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { Section } from "@/components/section-wrapper";
 
 export default function AboutSection() {
   return (
-    <section
+    <Section
       id="about"
-      className="py-24 bg-gradient-to-br from-secondary/10 to-primary/10"
+      aria-labelledby="about-header"
+      className="bg-gradient-to-br from-secondary/10 to-primary/10"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-gray-900 leading-tight">
+            <h2
+              className="text-2xl md:text-4xl font-serif font-bold text-gray-900 leading-tight"
+              id="about-header"
+            >
               Passion for
               <span className="text-secondary block mt-2">
                 Culinary Excellence
@@ -72,6 +77,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 }
