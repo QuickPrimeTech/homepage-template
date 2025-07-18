@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Gift, Heart } from "lucide-react";
 import { H2, H3, Paragraph } from "@/components/ui/typography";
 import { Section } from "@/components/section-wrapper";
 import { offers } from "@/config/siteConfig";
@@ -22,7 +21,7 @@ export default function OffersSection() {
             Special Offers
           </H2>
           <Paragraph className="text-orange-100">
-            Limited time deals you don't want to miss
+            Limited time deals you don&apos;t want to miss
           </Paragraph>
         </div>
 

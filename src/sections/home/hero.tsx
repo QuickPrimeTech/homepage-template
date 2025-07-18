@@ -1,8 +1,6 @@
 "use client";
-
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Utensils, Calendar } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 

@@ -6,14 +6,12 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Gift, Star, X } from "lucide-react";
+import { Gift, Star } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function NewsletterPopup() {

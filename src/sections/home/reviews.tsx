@@ -26,7 +26,7 @@ export default function ReviewsSection() {
       <SectionHeader>
         <Badge>Testimonials</Badge>
         <H2 id="reviews-header">What Our Guests Say</H2>
-        <Description>Don't just take our word for it</Description>
+        <Description>Don&apos;t just take our word for it</Description>
       </SectionHeader>
 
       <Carousel opts={{ align: "start" }} className="w-full max-w-full">
@@ -46,7 +46,9 @@ export default function ReviewsSection() {
                       />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-6 italic">"{review.review}"</p>
+                  <p className="text-gray-700 mb-6 italic">
+                    &quot;{review.review}&quot;
+                  </p>
 
                   <div className="flex items-center">
                     <Avatar className="w-12 h-12 mr-4">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChefHat, Facebook, Instagram, Twitter } from "lucide-react";
+import { ChefHat, Facebook, Instagram } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { FaXTwitter } from "react-icons/fa6";
 

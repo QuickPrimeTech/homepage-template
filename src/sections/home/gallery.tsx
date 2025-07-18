@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { galleryImages } from "@/config/siteConfig";
+import Image from "next/image";
 
 export default function GallerySection() {
   return (
@@ -45,7 +46,7 @@ export default function GallerySection() {
               aria-label={image.title}
             >
               <div className="relative group overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
                   width={600}

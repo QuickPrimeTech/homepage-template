@@ -16,13 +16,7 @@ import { siteConfig } from "@/config/siteConfig";
 import Autoplay from "embla-carousel-autoplay";
 
 import { Section } from "@/components/section-wrapper";
-import {
-  SectionHeader,
-  H2,
-  H3,
-  Paragraph,
-  Description,
-} from "@/components/ui/typography";
+import { SectionHeader, H2, Description } from "@/components/ui/typography";
 
 export default function MenuSection() {
   const [isMobile, setIsMobile] = useState(false);
