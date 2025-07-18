@@ -33,7 +33,7 @@ export default function HeroSection() {
             <span className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight block mb-4">
               Exceptional
             </span>
-            <span className="text-amber-400 text-5xl md:text-6xl lg:text-7xl font-bold leading-tight block">
+            <span className="text-secondary text-5xl md:text-6xl lg:text-7xl font-bold leading-tight block">
               Dining Experience
             </span>
           </h1>

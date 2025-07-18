@@ -1,10 +1,8 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   Carousel,
   CarouselContent,
@@ -45,13 +43,10 @@ export default function MenuSection() {
   );
 
   return (
-    <section id="menu" className="py-24 bg-white">
+    <section id="menu" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-20 space-y-6">
-          <Badge className="bg-amber-100 text-amber-700 px-4 py-2 text-sm font-medium">
-            Our Specialties
-          </Badge>
+        <div className="text-center mb-20 space-y-2">
           <h2 className="text-5xl md:text-6xl font-playfair font-bold text-gray-900 leading-tight">
             Signature Dishes
           </h2>
@@ -82,7 +77,7 @@ export default function MenuSection() {
                   key={item.id}
                   className="pl-4 md:pl-6 md:basis-1/2 lg:basis-1/3"
                 >
-                  <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 group h-full glass-effect border-white/20">
+                  <Card className="py-0 pb-3 overflow-hidden group h-full">
                     <div className="relative h-72 overflow-hidden">
                       <Image
                         src={item.image || "/placeholder.svg"}
@@ -90,20 +85,13 @@ export default function MenuSection() {
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      <div className="absolute top-6 left-6">
-                        <Badge
-                          className={`${item.badgeColor} text-white px-3 py-1 font-medium`}
-                        >
-                          {item.badge}
-                        </Badge>
-                      </div>
                     </div>
                     <CardContent className="p-8 space-y-4">
                       <div className="flex justify-between items-start">
                         <h3 className="text-2xl font-playfair font-bold text-gray-900">
                           {item.name}
                         </h3>
-                        <span className="text-3xl font-playfair font-bold text-amber-600">
+                        <span className="text-2xl font-playfair font-bold text-secondary">
                           ${item.price}
                         </span>
                       </div>
@@ -124,12 +112,7 @@ export default function MenuSection() {
                             ({item.reviews} reviews)
                           </span>
                         </div>
-                        <Button
-                          size="sm"
-                          className="bg-amber-600 hover:bg-amber-700 text-white px-6"
-                        >
-                          Order Now
-                        </Button>
+                        <Button size="sm">Order Now</Button>
                       </div>
                     </CardContent>
                   </Card>
@@ -143,11 +126,7 @@ export default function MenuSection() {
 
         {/* View Full Menu Button */}
         <div className="text-center mt-16">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white bg-transparent px-10 py-4 text-lg"
-          >
+          <Button size="lg" variant="outline">
             View Full Menu
             <ArrowRight className="h-5 w-5 ml-3" />
           </Button>
