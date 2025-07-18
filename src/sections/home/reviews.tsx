@@ -69,8 +69,8 @@ export default function ReviewsSection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="flex -left-6 backdrop-blur-md bg-white/10 border-white/20" />
+        <CarouselNext className="flex -right-6 backdrop-blur-md bg-white/10 border-white/20" />
       </Carousel>
     </Section>
   );

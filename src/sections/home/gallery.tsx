@@ -63,8 +63,8 @@ export default function GallerySection() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="flex -left-6 border border-white/20 backdrop-blur-md bg-white/10" />
+        <CarouselNext className="flex -right-6 border border-white/20 backdrop-blur-md bg-white/10" />
       </Carousel>
     </Section>
   );

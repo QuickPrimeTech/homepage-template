@@ -56,7 +56,7 @@ export default function AboutSection() {
             />
 
             {/* Award Badge */}
-            <div className="absolute bg-secondary -bottom-8 -left-8 glass-effect p-8 rounded-2xl shadow-xl border border-white/20">
+            <div className="absolute bg-secondary -bottom-8 -left-8  p-8 rounded-2xl shadow-xl border border-white/20">
               <div className="flex items-center space-x-4">
                 <Award className="h-10 w-10 text-secondary-foreground" />
                 <div>
