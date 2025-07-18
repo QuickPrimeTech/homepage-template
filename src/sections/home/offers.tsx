@@ -1,15 +1,13 @@
-"use client";
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Gift, Heart } from "lucide-react";
 
 export default function OffersSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-orange-500 to-amber-500">
+    <section className="py-20 bg-gradient-to-r from-secondary to-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
             Special Offers
           </h2>
           <p className="text-xl text-orange-100">

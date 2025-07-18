@@ -1,6 +1,6 @@
 export const siteConfig = {
   // Restaurant Basic Info
-  restaurantName: "Bella Vista",
+  restaurantName: "Eagles Restaurant",
   tagline: "Exceptional Dining Experience",
   description:
     "Award-winning restaurant offering exceptional cuisine with locally sourced ingredients and impeccable service in the heart of downtown.",

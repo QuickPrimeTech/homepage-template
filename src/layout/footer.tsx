@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ChefHat, Facebook, Instagram, Twitter } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -21,21 +22,27 @@ export default function Footer() {
             <div className="flex space-x-6">
               <Link
                 href={siteConfig.socialLinks.facebook}
-                className="text-gray-400 hover:text-amber-500 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-50/20 hover:bg-secondary text-gray-50 hover:text-secondary-foreground p-2 rounded-full transition-colors"
               >
                 <Facebook className="h-6 w-6" />
               </Link>
               <Link
                 href={siteConfig.socialLinks.instagram}
-                className="text-gray-400 hover:text-amber-500 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-50/20 hover:bg-secondary text-gray-50 hover:text-secondary-foreground p-2 rounded-full transition-colors"
               >
                 <Instagram className="h-6 w-6" />
               </Link>
               <Link
                 href={siteConfig.socialLinks.twitter}
-                className="text-gray-400 hover:text-amber-500 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-50/20 hover:bg-secondary text-gray-50 hover:text-secondary-foreground p-2 rounded-full transition-colors"
               >
-                <Twitter className="h-6 w-6" />
+                <FaXTwitter className="h-6 w-6" />
               </Link>
             </div>
           </div>
