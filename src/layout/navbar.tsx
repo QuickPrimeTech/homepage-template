@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChefHat, Calendar, Truck } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 
 export default function Header() {
   return (

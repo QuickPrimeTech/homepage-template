@@ -1,8 +1,6 @@
-"use client";
-
 import Link from "next/link";
 import { ChefHat, Facebook, Instagram, Twitter } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 
 export default function Footer() {
   return (

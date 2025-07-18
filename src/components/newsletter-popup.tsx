@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { X, Gift, Star } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 
 interface NewsletterPopupProps {
   isOpen: boolean;

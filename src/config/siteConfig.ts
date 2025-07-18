@@ -289,5 +289,42 @@ export const siteConfig = {
     creditName: "QuickPrimeTech",
   },
 };
-
+export const reviews = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    role: "Food Enthusiast",
+    image: "/placeholder.svg?height=50&width=50",
+    rating: 5,
+    review:
+      "Absolutely incredible experience! The truffle risotto was divine, and the service was impeccable. This is now our go-to spot for special occasions.",
+  },
+  {
+    id: 2,
+    name: "Michael Chen",
+    role: "Business Executive",
+    image: "/placeholder.svg?height=50&width=50",
+    rating: 5,
+    review:
+      "The atmosphere is perfect for a romantic dinner. The Wagyu steak was cooked to perfection, and the wine selection is outstanding.",
+  },
+  {
+    id: 3,
+    name: "Emily Rodriguez",
+    role: "Local Resident",
+    image: "/placeholder.svg?height=50&width=50",
+    rating: 5,
+    review:
+      "Every visit exceeds expectations. The attention to detail in both food and service makes this restaurant truly special. Highly recommended!",
+  },
+  {
+    id: 4,
+    name: "Emily Rodriguez",
+    role: "Local Resident",
+    image: "/placeholder.svg?height=50&width=50",
+    rating: 5,
+    review:
+      "Every visit exceeds expectations. The attention to detail in both food and service makes this restaurant truly special. Highly recommended!",
+  },
+];
 export type SiteConfig = typeof siteConfig;

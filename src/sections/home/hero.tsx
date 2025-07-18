@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Utensils, Calendar } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 
 export default function HeroSection() {
   const currentYear = new Date().getFullYear();
@@ -44,12 +44,12 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-6 pt-4">
             <Button size="lg">
-              <Utensils className="h-5 w-5 mr-3" />
-              View Menu
+              <Calendar className="h-5 w-5" />
+              Book a Table
             </Button>
             <Button size="lg" variant="outline">
-              <Calendar className="h-5 w-5 mr-3" />
-              Book a Table
+              <Utensils className="h-5 w-5" />
+              View Menu
             </Button>
           </div>
         </div>

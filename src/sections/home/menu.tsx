@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star, ArrowRight } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 

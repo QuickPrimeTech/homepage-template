@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 import MultiStepReservationForm from "@/components/multi-step-reservation-form";
 import NewsletterPopup from "@/components/newsletter-popup";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig } from "@/config/siteConfig";
 
 export default function ContactSection() {
   const [showPopup, setShowPopup] = useState(false);
