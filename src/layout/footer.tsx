@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <ChefHat className="h-8 w-8 text-amber-500" />
-              <span className="text-2xl font-playfair font-bold">
+              <span className="text-2xl font-serif font-bold">
                 {siteConfig.restaurantName}
               </span>
             </div>
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-playfair font-semibold mb-6">
+            <h3 className="text-lg font-serif font-semibold mb-6">
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -68,9 +68,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-playfair font-semibold mb-6">
-              Services
-            </h3>
+            <h3 className="text-lg font-serif font-semibold mb-6">Services</h3>
             <ul className="space-y-4">
               {siteConfig.footer.services.map((service, index) => (
                 <li key={index}>
@@ -87,9 +85,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-playfair font-semibold mb-6">
-              Contact
-            </h3>
+            <h3 className="text-lg font-serif font-semibold mb-6">Contact</h3>
             <ul className="space-y-4 text-gray-400">
               <li>{siteConfig.address.street}</li>
               <li>

@@ -1,49 +1,64 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Gift, Heart } from "lucide-react";
+import { H2, H3, Paragraph } from "@/components/ui/typography";
+import { Section } from "@/components/section-wrapper";
+import { offers } from "@/config/siteConfig";
 
 export default function OffersSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-secondary to-primary">
+    <Section
+      className="bg-gradient-to-r from-secondary to-primary"
+      aria-labelledby="offers-heading"
+      role="region"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">
+          <H2
+            id="offers-heading"
+            className="text-white mb-2"
+            aria-label="Special Offers section heading"
+          >
             Special Offers
-          </h2>
-          <p className="text-xl text-orange-100">
+          </H2>
+          <Paragraph className="text-orange-100">
             Limited time deals you don't want to miss
-          </p>
+          </Paragraph>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-            <CardContent className="p-8">
-              <Gift className="h-12 w-12 text-orange-200 mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Happy Hour Special</h3>
-              <p className="text-orange-100 mb-6">
-                50% off appetizers and premium cocktails every weekday from 4-6
-                PM
-              </p>
-              <Button className="bg-white text-orange-500 hover:bg-orange-50">
-                Learn More
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
-            <CardContent className="p-8">
-              <Heart className="h-12 w-12 text-orange-200 mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Date Night Package</h3>
-              <p className="text-orange-100 mb-6">
-                3-course dinner for two with complimentary wine pairing - $89
-              </p>
-              <Button className="bg-white text-orange-500 hover:bg-orange-50">
-                Reserve Now
-              </Button>
-            </CardContent>
-          </Card>
+          {offers.map((offer) => (
+            <Card
+              key={offer.id}
+              className="bg-white/10 backdrop-blur-sm border-white/20 text-white"
+              aria-labelledby={`offer-${offer.id}-title`}
+              aria-describedby={`offer-${offer.id}-desc`}
+            >
+              <CardContent className="p-8">
+                <offer.icon
+                  className="h-12 w-12 text-orange-200 mb-4"
+                  aria-hidden="true"
+                />
+                <H3 id={`offer-${offer.id}-title`} className="mb-4 text-white">
+                  {offer.title}
+                </H3>
+                <Paragraph
+                  id={`offer-${offer.id}-desc`}
+                  className="text-orange-100 mb-6"
+                >
+                  {offer.description}
+                </Paragraph>
+                <Button
+                  className="bg-white text-orange-500 hover:bg-orange-50"
+                  aria-label={offer.ariaLabel}
+                >
+                  {offer.buttonLabel}
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 }

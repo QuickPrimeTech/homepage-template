@@ -29,7 +29,7 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center">
         <div className="max-w-3xl space-y-8">
-          <h1 className="text-white font-playfair">
+          <h1 className="text-white font-serif">
             <span className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight block mb-4">
               Exceptional
             </span>
@@ -58,17 +58,17 @@ export default function HeroSection() {
       {/* Floating Stats */}
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 hidden lg:flex space-x-8">
         <div className="glass-card rounded-xl p-6 text-center text-white min-w-[120px]">
-          <div className="text-3xl font-playfair font-bold mb-1">
+          <div className="text-3xl font-serif font-bold mb-1">
             {yearsInBusiness}+
           </div>
           <div className="text-sm text-white/80">Years Experience</div>
         </div>
         <div className="glass-card rounded-xl p-6 text-center text-white min-w-[120px]">
-          <div className="text-3xl font-playfair font-bold mb-1">50K+</div>
+          <div className="text-3xl font-serif font-bold mb-1">50K+</div>
           <div className="text-sm text-white/80">Happy Customers</div>
         </div>
         <div className="glass-card rounded-xl p-6 text-center text-white min-w-[120px]">
-          <div className="text-3xl font-playfair font-bold mb-1">4.9</div>
+          <div className="text-3xl font-serif font-bold mb-1">4.9</div>
           <div className="text-sm text-white/80">Rating</div>
         </div>
       </div>

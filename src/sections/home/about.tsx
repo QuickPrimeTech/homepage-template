@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
 import { Award } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 
@@ -15,7 +12,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <h2 className="text-5xl md:text-6xl font-playfair font-bold text-gray-900 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-gray-900 leading-tight">
               Passion for
               <span className="text-secondary block mt-2">
                 Culinary Excellence
@@ -37,7 +34,7 @@ export default function AboutSection() {
             <div className="flex items-center space-x-12 pt-4">
               {siteConfig.about.stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-4xl font-playfair font-bold text-secondary mb-1">
+                  <div className="text-4xl font-serif font-bold text-secondary mb-1">
                     {stat.number}
                   </div>
                   <div className="text-sm text-gray-600 font-medium">
@@ -63,7 +60,7 @@ export default function AboutSection() {
               <div className="flex items-center space-x-4">
                 <Award className="h-10 w-10 text-secondary-foreground" />
                 <div>
-                  <div className="font-playfair font-bold text-secondary-foreground text-lg">
+                  <div className="font-serif font-bold text-secondary-foreground text-lg">
                     {siteConfig.about.award.title}
                   </div>
                   <div className="text-sm text-secondary-foreground">

@@ -1,3 +1,5 @@
+// config/siteConfig.ts
+import { Gift, Heart } from "lucide-react";
 export const siteConfig = {
   // Restaurant Basic Info
   restaurantName: "Eagles Restaurant",
@@ -327,4 +329,64 @@ export const reviews = [
       "Every visit exceeds expectations. The attention to detail in both food and service makes this restaurant truly special. Highly recommended!",
   },
 ];
+export const galleryImages = [
+  {
+    id: 1,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Restaurant interior",
+    title: "Elegant Dining Room",
+  },
+  {
+    id: 2,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Chef preparing food",
+    title: "Master Chef at Work",
+  },
+  {
+    id: 3,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Signature dish",
+    title: "Signature Truffle Risotto",
+  },
+  {
+    id: 4,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Wine cellar",
+    title: "Premium Wine Selection",
+  },
+  {
+    id: 5,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Private dining",
+    title: "Private Dining Room",
+  },
+  {
+    id: 6,
+    src: "/placeholder.svg?height=400&width=600",
+    alt: "Bar area",
+    title: "Cocktail Bar",
+  },
+];
+
+export const offers = [
+  {
+    id: "happy-hour",
+    icon: Gift,
+    title: "Happy Hour Special",
+    description:
+      "50% off appetizers and premium cocktails every weekday from 4–6 PM.",
+    buttonLabel: "Learn More",
+    ariaLabel: "Learn more about the Happy Hour Special",
+  },
+  {
+    id: "date-night",
+    icon: Heart,
+    title: "Date Night Package",
+    description:
+      "3-course dinner for two with complimentary wine pairing – $89.",
+    buttonLabel: "Reserve Now",
+    ariaLabel: "Reserve the Date Night Package",
+  },
+];
+
 export type SiteConfig = typeof siteConfig;

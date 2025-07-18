@@ -51,7 +51,7 @@ export default function ContactSection() {
             <Badge className="bg-amber-100 text-amber-700 px-4 py-2 text-sm font-medium">
               Visit Us
             </Badge>
-            <h2 className="text-5xl md:text-6xl font-playfair font-bold text-gray-900 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-gray-900 leading-tight">
               Find Us
             </h2>
             <p className="text-xl text-gray-600">
@@ -64,7 +64,7 @@ export default function ContactSection() {
             <div>
               <Card className="p-10 h-full glass-effect border-white/20">
                 <CardContent className="p-0 space-y-8">
-                  <h3 className="text-3xl font-playfair font-bold text-gray-900 mb-8">
+                  <h3 className="text-3xl font-serif font-bold text-gray-900 mb-8">
                     Contact Information
                   </h3>
 

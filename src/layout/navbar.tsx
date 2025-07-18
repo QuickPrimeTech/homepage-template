@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-3">
               <ChefHat className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-playfair font-bold text-gray-900">
+              <span className="text-2xl font-serif font-bold text-gray-900">
                 {siteConfig.restaurantName}
               </span>
             </div>
